@@ -8,6 +8,15 @@
 - MongoDB: https://account.mongodb.com/account/login
 - Data link: https://www.kaggle.com/datasets/moro23/easyvisa-dataset
 
+## readme.so: good tool to write a readme file 
+## gigaspaces.com/data-terms/data-api : data API provider ( Only need to change the data ingestion pipelines )
+## evidentlyai.com :  detecting data difference 
+## huggingface.co : download model and use in local 
+## google gemini : using API 
+## 
+
+
+
 
 ## Git commands
 
@@ -37,7 +46,7 @@ pip install -r requirements.txt
 ## Workflow:
 
 1. constants
-2. entity
+2. entity(Config )
 3. components
 4. pipeline
 5. Main file
