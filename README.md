@@ -54,8 +54,9 @@ pip install -r requirements.txt
 
 
 ### Export the  environment variable
-```bash
 
+### Mongo DB ( us Visa Connection String: mongodb+srv://suman:<db_password>@cluster0.xerh5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0)
+```bash
 
 export MONGODB_URL="mongodb+srv://<username>:<password>...."
 
