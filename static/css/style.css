@@ -1,47 +1,46 @@
+/* Navbar styling */
 .navbar-light .navbar-brand {
-    color: rgba(0, 0, 0, .9);
-}
-
-.navbar-light .navbar-brand {
+    color: rgba(0, 0, 0, .85);
     margin-left: auto;
     margin-right: auto;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
+/* Body and form box styling */
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fc;
 }
 
 .formBox {
     margin-top: 50px;
-    padding: 50px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
+/* Heading styling */
 h1 {
     margin: 0;
     padding: 0;
     text-align: center;
-    margin-bottom: 50px !important;
+    margin-bottom: 40px !important;
+    font-size: 36px;
+    font-weight: 600;
+    color: #333333;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 48px;
 }
 
+/* Input box styling */
 .inputBox {
     position: relative;
     box-sizing: border-box;
-    margin-bottom: 40px;
-}
-
-.button {
-    width: 100%;
-    background: #00bcd4;
-    color: #fff;
-    border-radius: 0;
-    border: none;
-    outline: none;
-    height: 50px;
-    font-size: 24px;
+    margin-bottom: 30px;
 }
 
 .input {
@@ -51,32 +50,90 @@ h1 {
     background: transparent;
     border: none;
     outline: none;
-    font-size: 24px;
-    border-bottom: 2px solid rgba(0, 0, 0, .5);
+    font-size: 18px;
+    padding-left: 10px;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-bottom: 2px solid #00bcd4;
 }
 
 .inputText {
     position: absolute;
     line-height: 50px;
-    font-size: 24px;
-    transition: .5s;
-    opacity: 0.5;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+    color: #555555;
+    padding-left: 10px;
 }
 
 .focus .inputText {
-    transform: translateY(-30px);
-    font-size: 18px;
+    transform: translateY(-25px);
+    font-size: 14px;
     opacity: 1;
     color: #00bcd4;
 }
 
-.btn_train {
+/* Button styling */
+.button {
     width: 100%;
-    background: red;
+    background: linear-gradient(135deg, #007bff, #00bcd4);
     color: #fff;
-    border-radius: 0;
+    border-radius: 8px;
     border: none;
     outline: none;
     height: 50px;
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+    cursor: pointer;
 }
+
+.button:hover {
+    background: linear-gradient(135deg, #0056b3, #008ea1);
+}
+
+.button:disabled {
+    background: grey;
+}
+
+/* Training button styling (red) */
+.btn_train {
+    width: 100%;
+    background: #ff4c4c;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.btn_train:hover {
+    background: #e04343;
+}
+
+/* Additional styling for a clean modern look */
+::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-style: italic;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+form input, form select {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+
